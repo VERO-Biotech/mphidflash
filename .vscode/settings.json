@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "hidpi.h": "c",
+        "mphidflash.h": "c"
+    }
+}

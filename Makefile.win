@@ -1,7 +1,7 @@
 VERSION_MAIN = 1
 VERSION_SUB  = 8
 
-CC    = i586-mingw32msvc-gcc
+CC    = i686-w64-mingw32-gcc
 EXECS = mphidflash.exe
 OBJS  = main.o hex.o usb-windows.o
 CFLAGS = -DWIN -DVERSION_MAIN=$(VERSION_MAIN) -DVERSION_SUB=$(VERSION_SUB)
@@ -13,8 +13,6 @@ all: $(EXECS)
 
 .c.o:
 	$(CC) $(CFLAGS) -c $*.c
-
-# todo: add 64 bit target (low priority as 32 bit works on all platforms)
 
 mphidflash32: CFLAGS += -m32 
 mphidflash32: LDFLAGS += -m32
