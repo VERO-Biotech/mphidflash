@@ -12,7 +12,7 @@ distributed in the Microchip MPLAB Harmony, and previously in source code
 accompanying Application Note AN1388. Neither does *mphidflash* support the Bootloader in the Microchip PICDEM FS-USB demonstration application. The
 communication protocol in these products is very different, and unfortunately the PIC32 HID Bootloader uses the same default USB Product ID as the supported HID Bootloader. If used in error either *mphidflash* or the development board may freeze or indicate an error.
 
-The 'mphidflash' project is hosted at https://github.com/AdamLaurie/mphidflash (migrated from http://code.google.com/p/mphidflash/)
+The 'mphidflash' project is originally hosted at https://github.com/AdamLaurie/mphidflash (migrated from http://code.google.com/p/mphidflash/), but has been forked to a private VERO repository for internal use at https://github.com/VERO-Biotech/mphidflash.git 
 
 # Building and Installing
 VSCode was used with the WSL Extension utilizing the Linux Subsystem for Windows. This was configured to build the executable for windows on a Linux/Ubuntu environment as well as the standard native windows environment. This example will show you both ways to build the application.
