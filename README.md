@@ -55,12 +55,15 @@ Build Instructions:
 	```
 6. Open the *MSYS2 MinGW 32-bit* and *MSYS2 MinGW 64-bit* terminals and repeat the steps above to get all the toolchains installed. 
 
-7. 	Open a powershell window and navigate to the repository and enter the following command. 
+7. 	Open a powershell window and navigate to the repository and enter the following command. The vscode environment *tasks.json* file is setup so that you can hit **ctrl-shift + b** and select build and it will build the *Makefile.win* for you automatically. 
 	```
 	make -f Makefile.win
 	```
+
+	
 This will create a .exe in the binaries sub-directory, which can be called
 from the Windows commmand line (*mphidflash-1.8-win-32.exe*). You should copy this file somewhere on your executable path and rename it to 'mphidflash.exe'.
+
 
 # Usage
 To upload a new program to your PIC, it must be connected to your computer and set into bootloader mode. The tool can then be used with the following 
